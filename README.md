@@ -25,6 +25,7 @@ Projede Oluşturulan Entityler:
 - Vaccine
 - AvailableDate  
 - Appointment
+- Report
 
 Proje Nasıl Çalıştırılır?
 ---  
@@ -139,3 +140,12 @@ API'ye ait ilgili endpointler aşağıda listelenmiştir.
 | POST        | /v1/appointment                                                                                | Yeni randevu ekler.                                                              |
 | PUT         | /v1/appointment/{id}                                                                           | ID'ye göre randevuları günceller.                                                |
 | DELETE      | /v1/appointment/{id}                                                                           | ID'ye göre randevuları siler.                                                    |
+
+7- Report:
+---
+| HTTP METODU | ENDPOINT                 | AÇIKLAMASI                                          |
+|-------------|:-------------------------|:----------------------------------------------------|
+| GET         | /v1/report       | Kayıtlı doktorların çalıştığı günleri listeler.     |
+| POST        |  /v1/report        | Yeni çalışma günü ekler.                            |
+| PUT         |  /v1/report/{id}   | ID'ye göre doktorların çalıştığı günleri günceller. |
+| DELETE      |  /v1/report/{id}   | ID'ye göre doktorların çalıştığı günleri siler.     |
